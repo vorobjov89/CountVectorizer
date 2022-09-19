@@ -5,9 +5,9 @@ class CountVectorizer:
         self.document_term_matrix = list()  # Терм-документная матрица.
 
     def create_feature_list(self, corpus: list) -> object:
-        '''
+        """
         Метод создает список уникальных фич (токенов). Отдельной задаче - отдельный метод.
-        '''
+        """
         for document in corpus:
             document_tokens = document.lower().rstrip().split(' ')  # Превращаем документ в список токенов.
 
